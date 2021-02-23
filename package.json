@@ -2,7 +2,7 @@
   "name": "@bettercart/rescript-react-color",
   "homepage": "https://www.getbettercart.com",
   "author": "Better Cart Inc",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "license": "MIT",
   "scripts": {
     "re:clean": "bsb -clean-world",
