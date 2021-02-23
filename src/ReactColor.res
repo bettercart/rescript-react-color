@@ -1,4 +1,4 @@
-open BsTinycolor
+open RescriptTinycolor
 open Belt
 
 type colorChange = {

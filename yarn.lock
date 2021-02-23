@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@ctrl/tinycolor@^3.1.3":
-  version "3.1.6"
-  resolved "https://registry.yarnpkg.com/@ctrl/tinycolor/-/tinycolor-3.1.6.tgz#2d0ea7d433a34b1682e2e312e8a04812210fcc60"
-  integrity sha512-9RUTT3omv+5mSYFVsX143R7cTDQmT1FibCzoUVmO294mRIT0Sc8dk5srN27BTH0JKzQDWKkNCKh6q/+EkNfpkA==
+"@ctrl/tinycolor@^3.3.1":
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/@ctrl/tinycolor/-/tinycolor-3.4.0.tgz#c3c5ae543c897caa9c2a68630bed355be5f9990f"
+  integrity sha512-JZButFdZ1+/xAfpguQHoabIXkcqRRKpMrWKBkpEZZyxfY9C1DpADFB8PEqGSTeFr135SaTRfKqGKx5xSCLI7ZQ==
 
 "@icons/material@^0.2.4":
   version "0.2.4"
@@ -22,22 +22,20 @@ bs-platform@^9.0.1:
   resolved "https://registry.yarnpkg.com/bs-platform/-/bs-platform-9.0.1.tgz#069dae007aadb400963cec25c8349ea1f3f6cae0"
   integrity sha512-RxUrwxVBCx9AiiyFIthZwfPn+tAn9noRHCb9xJK4Uw2deGxIytqyoWDepMbH35v7EpxX0OhfXL5RrjHTaXersA==
 
-bs-tinycolor@^3.1.2:
-  version "3.1.2"
-  resolved "https://registry.yarnpkg.com/bs-tinycolor/-/bs-tinycolor-3.1.2.tgz#30826d86467a86411027e692fa0b966a6cbceeb1"
-  integrity sha512-xBrvEC4am7AY5VErFgvha1I7Cb8MazYimJ8fXhR2NVxczC9WUl1rZosIBCp06tmzYX4vIbRhj9ihP922LZ4Jog==
-  dependencies:
-    "@ctrl/tinycolor" "^3.1.3"
-
 "js-tokens@^3.0.0 || ^4.0.0":
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
   integrity sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==
 
-lodash@^4.0.1, lodash@^4.17.11:
-  version "4.17.20"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.20.tgz#b44a9b6297bcb698f1c51a3545a2b3b368d59c52"
-  integrity sha512-PlhdFcillOINfeV7Ni6oF1TAEayyZBoZ8bcshTHqOYJYlrqzRK5hagpagky5o4HfCzzd1TRkXPMFq6cKk9rGmA==
+lodash-es@^4.17.15:
+  version "4.17.21"
+  resolved "https://registry.yarnpkg.com/lodash-es/-/lodash-es-4.17.21.tgz#43e626c46e6591b7750beb2b50117390c609e3ee"
+  integrity sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==
+
+lodash@^4.0.1, lodash@^4.17.15:
+  version "4.17.21"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
+  integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
 
 loose-envify@^1.4.0:
   version "1.4.0"
@@ -65,13 +63,14 @@ prop-types@^15.5.10:
     object-assign "^4.1.1"
     react-is "^16.8.1"
 
-react-color@^2.18.1:
-  version "2.18.1"
-  resolved "https://registry.yarnpkg.com/react-color/-/react-color-2.18.1.tgz#2cda8cc8e06a9e2c52ad391a30ddad31972472f4"
-  integrity sha512-X5XpyJS6ncplZs74ak0JJoqPi+33Nzpv5RYWWxn17bslih+X7OlgmfpmGC1fNvdkK7/SGWYf1JJdn7D2n5gSuQ==
+react-color@^2.19.3:
+  version "2.19.3"
+  resolved "https://registry.yarnpkg.com/react-color/-/react-color-2.19.3.tgz#ec6c6b4568312a3c6a18420ab0472e146aa5683d"
+  integrity sha512-LEeGE/ZzNLIsFWa1TMe8y5VYqr7bibneWmvJwm1pCn/eNmrabWDh659JSPn9BuaMpEfU83WTOJfnCcjDZwNQTA==
   dependencies:
     "@icons/material" "^0.2.4"
-    lodash "^4.17.11"
+    lodash "^4.17.15"
+    lodash-es "^4.17.15"
     material-colors "^1.2.1"
     prop-types "^15.5.10"
     reactcss "^1.2.0"
@@ -88,6 +87,13 @@ reactcss@^1.2.0:
   integrity sha512-KiwVUcFu1RErkI97ywr8nvx8dNOpT03rbnma0SSalTYjkrPYaEajR4a/MRt6DZ46K6arDRbWMNHF+xH7G7n/8A==
   dependencies:
     lodash "^4.0.1"
+
+rescript-tinycolor@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/rescript-tinycolor/-/rescript-tinycolor-4.0.0.tgz#f5f7762468a335bce74c886fd5851a26254a5525"
+  integrity sha512-3MtUFSK66BlQF3LE/OJPtBGsm+3butw2NbaoM0BtTVhlgcQjqO/p6YrwF9bhBOy1MLY47yLwVE87iiAvJ6DTuQ==
+  dependencies:
+    "@ctrl/tinycolor" "^3.3.1"
 
 tinycolor2@^1.4.1:
   version "1.4.2"

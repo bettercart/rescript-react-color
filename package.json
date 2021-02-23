@@ -2,7 +2,7 @@
   "name": "@bettercart/rescript-react-color",
   "homepage": "https://www.getbettercart.com",
   "author": "Better Cart Inc",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "scripts": {
     "re:clean": "bsb -clean-world",
@@ -16,15 +16,15 @@
   ],
   "optionalDependencies": {},
   "dependencies": {
-    "bs-tinycolor": "^3.1.2",
-    "react-color": "^2.18.1"
+    "react-color": "^2.19.3",
+    "rescript-tinycolor": "^4.0.0"
   },
   "peerDependencies": {
-    "bs-platform": "^9.0.1",
-    "@rescript/react": "^0.10.1"
+    "@rescript/react": "^0.10.1",
+    "bs-platform": "^9.0.1"
   },
   "devDependencies": {
-    "bs-platform": "^9.0.1",
-    "@rescript/react": "^0.10.1"
+    "@rescript/react": "^0.10.1",
+    "bs-platform": "^9.0.1"
   }
 }

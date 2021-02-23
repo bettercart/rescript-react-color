@@ -5,8 +5,8 @@ B /Users/danwetherald/Developer/OpenSource/@bettercart/res-react-color/node_modu
 FLG -w +a-4-9-20-40-41-42-50-61-102
 S /Users/danwetherald/Developer/OpenSource/@bettercart/res-react-color/node_modules/@rescript/react/lib/ocaml
 B /Users/danwetherald/Developer/OpenSource/@bettercart/res-react-color/node_modules/@rescript/react/lib/ocaml
-S /Users/danwetherald/Developer/OpenSource/@bettercart/res-react-color/node_modules/bs-tinycolor/lib/ocaml
-B /Users/danwetherald/Developer/OpenSource/@bettercart/res-react-color/node_modules/bs-tinycolor/lib/ocaml
+S /Users/danwetherald/Developer/OpenSource/@bettercart/res-react-color/node_modules/rescript-tinycolor/lib/ocaml
+B /Users/danwetherald/Developer/OpenSource/@bettercart/res-react-color/node_modules/rescript-tinycolor/lib/ocaml
 S src
 B lib/bs/src
 ####BSB GENERATED: NO EDIT}

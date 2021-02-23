@@ -8,7 +8,7 @@ var Pervasives = require("bs-platform/lib/js/pervasives.js");
 var Belt_Option = require("bs-platform/lib/js/belt_Option.js");
 var Caml_option = require("bs-platform/lib/js/caml_option.js");
 var Tinycolor = require("@ctrl/tinycolor");
-var TinyColor$BsTinycolor = require("bs-tinycolor/src/TinyColor.bs.js");
+var TinyColor$RescriptTinycolor = require("rescript-tinycolor/src/TinyColor.bs.js");
 var Common = require("react-color/lib/components/common");
 
 var ChromePicker = {};
@@ -164,7 +164,7 @@ function ReactColor$SketchFields(Props) {
               hex: value.hex,
               hsl: value.hsl
             },
-            TinyColor$BsTinycolor.makeFromRgba({
+            TinyColor$RescriptTinycolor.makeFromRgba({
                   r: newR,
                   g: value.g,
                   b: value.b,
@@ -183,7 +183,7 @@ function ReactColor$SketchFields(Props) {
               hex: value.hex,
               hsl: value.hsl
             },
-            TinyColor$BsTinycolor.makeFromRgba({
+            TinyColor$RescriptTinycolor.makeFromRgba({
                   r: value.r,
                   g: newG,
                   b: value.b,
@@ -202,7 +202,7 @@ function ReactColor$SketchFields(Props) {
               hex: value.hex,
               hsl: value.hsl
             },
-            TinyColor$BsTinycolor.makeFromRgba({
+            TinyColor$RescriptTinycolor.makeFromRgba({
                   r: value.r,
                   g: value.g,
                   b: newB,
@@ -221,7 +221,7 @@ function ReactColor$SketchFields(Props) {
               hex: value.hex,
               hsl: hsl
             },
-            TinyColor$BsTinycolor.makeFromHsla({
+            TinyColor$RescriptTinycolor.makeFromHsla({
                   h: hsl.h,
                   s: hsl.a,
                   l: hsl.l,
@@ -315,13 +315,13 @@ function ReactColor$Sketch(Props) {
   var onChange = Props.onChange;
   var footer = Props.footer;
   var match = React.useState(function () {
-        return TinyColor$BsTinycolor.makeFromString(value);
+        return TinyColor$RescriptTinycolor.makeFromString(value);
       });
   var setColor = match[1];
   var color = match[0];
-  var match$1 = Belt_Option.map(color, TinyColor$BsTinycolor.toHsl);
-  var match$2 = Belt_Option.map(color, TinyColor$BsTinycolor.toHsv);
-  var match$3 = Belt_Option.map(color, TinyColor$BsTinycolor.toRgb);
+  var match$1 = Belt_Option.map(color, TinyColor$RescriptTinycolor.toHsl);
+  var match$2 = Belt_Option.map(color, TinyColor$RescriptTinycolor.toHsv);
+  var match$3 = Belt_Option.map(color, TinyColor$RescriptTinycolor.toRgb);
   var match$4 = Belt_Option.map(color, (function (prim) {
           return prim.toHex();
         }));
@@ -344,7 +344,7 @@ function ReactColor$Sketch(Props) {
                           a: match$2.a
                         },
                         onChange: (function (param) {
-                            var c = TinyColor$BsTinycolor.makeFromHsva({
+                            var c = TinyColor$RescriptTinycolor.makeFromHsva({
                                   h: param.h,
                                   s: param.s,
                                   v: param.v,
@@ -376,7 +376,7 @@ function ReactColor$Sketch(Props) {
                                   a: match$1.a
                                 },
                                 onChange: (function (param) {
-                                    var newColor = TinyColor$BsTinycolor.makeFromHsla({
+                                    var newColor = TinyColor$RescriptTinycolor.makeFromHsla({
                                           h: param.h,
                                           s: param.s,
                                           l: param.l,
@@ -410,7 +410,7 @@ function ReactColor$Sketch(Props) {
                                   a: match$3.a
                                 },
                                 onChange: (function (param) {
-                                    var c = TinyColor$BsTinycolor.makeFromHsla({
+                                    var c = TinyColor$RescriptTinycolor.makeFromHsla({
                                           h: param.h,
                                           s: param.s,
                                           l: param.l,

@@ -3,7 +3,7 @@
   "reason": {
     "react-jsx": 3
   },
-  "version": "0.1.0",
+  "version": "0.1.1",
   "sources": {
     "dir": "src",
     "subdirs": true
@@ -13,7 +13,7 @@
     "in-source": true
   },
   "suffix": ".bs.js",
-  "bs-dependencies": ["@rescript/react", "bs-tinycolor"],
+  "bs-dependencies": ["@rescript/react", "rescript-tinycolor"],
   "warnings": {
     "error": "+101"
   }
