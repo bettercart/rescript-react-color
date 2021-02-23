@@ -1,6 +1,5 @@
 {
-  "name": "@bettercart/res-react-color",
-  "namespace": "ReactColor",
+  "name": "@bettercart/rescript-react-color",
   "reason": {
     "react-jsx": 3
   },
